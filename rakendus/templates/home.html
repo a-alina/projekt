@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="card">
+    <div class="card-header">
+      Prepare for you next test
+    </div>
+
+    <div class="start">
+    <div class="card-body", id="first"> 
+            <p>Are you ready to begin?</p>
+    </div>
+
+    </div>
+
+    <div class="hideable">
+
+    <div class="card-body", id="first"> 
+        We shall begin then <br>
+        <p id="sec" > Q: </p>
+    </div>
+    </div>
+
+    <div class="card-body", id="responses"></div>
+    {% if response %}
+    {{ response }}
+    {% endif %}
+</div>
+
+
+
+<form method=POST action="{%url 'home' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if form %}
+    {{ form.file }}
+    {% else %}
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Tell me a topic</label>
+            <input type="text" class="form-control" name="question" id="formGroupExampleInput2" placeholder="Here">
+        </div>
+    {% endif %}
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+      
+
+</form>
+
+ <style>
+    .hideable {
+    display: none;
+    }
+
+    .start {
+    display: inline;
+    }
+
+
+    @keyframes animate {
+        40%, 60%{
+            left: 100%;
+        }
+        100%{
+            left:0%;
+        }
+        
+    }
+
+</style>
+
+{% endblock content %}
