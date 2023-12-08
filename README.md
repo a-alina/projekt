@@ -9,7 +9,7 @@ Projekti käivitamiseks tuleb:
    <img width="1425" alt="image" src="https://github.com/a-alina/projekt/assets/53915943/e1857fc2-41da-4682-b392-6c6ba24fc437">
 6. Kirjtada chatti aknasse "ask me a question based on the text"
 <img width="1421" alt="image" src="https://github.com/a-alina/projekt/assets/53915943/5a482d9e-c5de-45f9-8ca8-6beece5741e2">
-7. Programm genereerida küsimust
+7. Programm genereerib küsimust
 <img width="1431" alt="image" src="https://github.com/a-alina/projekt/assets/53915943/5b4649a0-de05-4f41-8a8c-347f893dca94">
 
 
