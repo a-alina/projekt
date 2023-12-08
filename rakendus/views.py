@@ -23,7 +23,7 @@ document_main = None
 @csrf_exempt
 def home(request):
     global document_main
-    openai_api_key = "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"
+    openai_api_key = ""
     form = UploadFileForm(request.POST, request.FILES)
 
 
